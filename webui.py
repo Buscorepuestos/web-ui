@@ -48,6 +48,13 @@ _global_agent_state = AgentState()
 # webui config
 webui_config_manager = utils.ConfigManager()
 
+import logging
+import sys
+
+logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+logger.debug("Starting webui.py - Initial logging setup...")
+
 
 def scan_and_register_components(blocks):
     """扫描一个 Blocks 对象并注册其中的所有交互式组件，但不包括按钮"""
