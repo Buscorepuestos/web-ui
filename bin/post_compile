@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "Running post-compile script to install Playwright browsers..."
+python -m playwright install chromium
+echo "Playwright browsers installed."
