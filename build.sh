@@ -1,3 +1,7 @@
+pip cache purge
+pip install --upgrade pip
+pip install langchain-core==0.1.0 langchain-community==0.0.29
+pip install -r requirements.txt --use-deprecated=legacy-resolver
 #!/bin/bash
 set -o errexit
 
