@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-echo "Running post-compile script to install Playwright browsers..."
-python -m playwright install chromium
-echo "Playwright browsers installed."
-echo "Listing root directory contents (/app):"  # Added line
-ls -al /app
