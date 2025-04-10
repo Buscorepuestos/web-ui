@@ -1,17 +1,9 @@
-rowser-use==0.1.40
+browser-use==0.1.40
 pyperclip==1.9.0
-gradio>=4.24.0
+gradio
 json-repair
 langchain-mistralai==0.2.4
-langchain-google-genai==0.0.8
+langchain-google-genai==2.0.8
 MainContentExtractor==0.0.4
 playwright>=1.42.0
-openai>=1.12.0
-anthropic>=0.18.0
-deepseek-ai>=0.0.1
-langchain-core==0.1.0  # Fija esta versión explícitamente
-langchain-community==0.0.29  # Versión compatible
-httpx>=0.27.0
-websockets>=12.0
-uvicorn>=0.29.0
 python-dotenv>=1.0.0

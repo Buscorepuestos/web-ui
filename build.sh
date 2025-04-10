@@ -1,7 +1,3 @@
-pip cache purge
-pip install --upgrade pip
-pip install langchain-core==0.1.0 langchain-community==0.0.29
-pip install -r requirements.txt --use-deprecated=legacy-resolver
 #!/bin/bash
 set -o errexit
 
@@ -24,8 +20,8 @@ apt-get update && apt-get install -y \
     libvpx5 \
     python3-pip  # Asegurar que pip esté disponible
 
-# 2. Instalar dependencias de Python
-pip install --upgrade pip && pip install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
 
 # 3. Instalar Chromium con Playwright
 python -m playwright install --with-deps chromium
