@@ -1,3 +1,8 @@
+import os
+# Configuración CRÍTICA para Render (debe ir al inicio)
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.expanduser("~/.ms-playwright")  # <-- Añade esta línea
+os.environ["PLAYWRIGHT_DOWNLOAD_HOST"] = "https://npmmirror.com/mirrors/playwright/"  # Usa mirror chino para evitar bloqueos
+
 import pdb
 import logging
 
