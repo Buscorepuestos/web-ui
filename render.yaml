@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: browser-use-webui
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "python webui.py --ip 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: CHROME_PERSISTENT_SESSION
+        value: "false"  # Cambia a "true" si necesitas sesiones persistentes

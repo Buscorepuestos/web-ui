@@ -1,1 +1,0 @@
-web: uvicorn webui:demo --host 0.0.0.0 --port $PORT
